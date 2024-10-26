@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".landingpage">
+
+
+    <ImageView
+        android:id="@+id/imageOK"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="1dp"
+        app:srcCompat="@drawable/okphoto" />
+
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="300dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/corner_stroke_gray"
+        android:backgroundTint="#D3D3D3">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#d3d3d3"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_checkavailability" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="CHECK AVAILABILITY"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="300dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/corner_stroke_gray"
+        android:backgroundTint="#D3D3D3">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#d3d3d3"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_applynow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="APPLY NOW"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="440dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/corner_stroke_gray"
+        android:backgroundTint="#D3D3D3">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#d3d3d3"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_appstatus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="PLANS"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="440dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/corner_stroke_gray"
+        android:backgroundTint="#D3D3D3">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#d3d3d3"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_plans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="APPLICATION STATUS"
+            android:textColor="@color/black" />
+
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/corner5dp_solid_blue"
+        android:onClick="landingpage"
+        android:text="register" />
+
+    <Button
+        android:id="@+id/loginpage"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/corner5dp_solid_blue"
+        android:onClick="loginPageview"
+        android:text="Login"
+         />
+
+</RelativeLayout>

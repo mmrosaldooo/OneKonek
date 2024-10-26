@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OneKonek</string>
+    <string name="select" />
+    <string name="app_name2">DropdownMenu</string>
+    <string name="item_label">Items</string>
+</resources>
+
+

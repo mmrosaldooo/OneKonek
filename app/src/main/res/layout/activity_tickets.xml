@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tickets">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:background="#0FFFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/app_name"
+        android:onClick="OpenHomeBack2Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="@+id/toolbar1"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Tickets"
+        android:textColor="#3EBD26"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar1"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="@+id/toolbar1" />
+
+
+    <FrameLayout
+
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.142">
+
+        <Button
+            android:id="@+id/contact_us"
+            android:layout_width="317dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="295dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/corner_solidgray"
+            android:text="Contact Us"
+            android:textColor="#1975AE"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/submit_ticket"
+            android:layout_width="317dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="220dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/corner_solidgray"
+            android:text="Submit a Ticket"
+            android:textColor="#1975AE"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="105dp"
+            android:layout_height="83dp"
+            android:layout_marginVertical="50dp"
+            android:layout_marginStart="155dp"
+            app:srcCompat="@drawable/ic_ticketing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="150dp"
+
+            android:layout_marginStart="105dp"
+
+            android:text="How can we help you?"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation_items" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

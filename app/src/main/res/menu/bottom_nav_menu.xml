@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/baseline_home"
+        android:id="@+id/home"
+        android:onClick="OpenHomeBack"/>
+    <item
+        android:title="Payments"
+        android:icon="@drawable/ic_payment_fadecolor"
+        android:id="@+id/pay"
+        android:onClick="OpenBackPayments"/>
+    <item
+        android:title="Ticket"
+        android:icon="@drawable/ic_ticket_fadecolor"
+        android:id="@+id/tickets"
+        android:onClick="OpenTicket"/>
+</menu>
