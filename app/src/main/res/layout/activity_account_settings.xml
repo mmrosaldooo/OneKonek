@@ -29,7 +29,7 @@
         android:contentDescription="@string/app_name"
         android:onClick="OpenHome_PageBack"
         app:srcCompat="@drawable/arrow_back"
-        tools:ignore="OnClick" />
+        tools:ignore="ImageContrastCheck,OnClick,UsingOnClickInXml" />
 
 
     <TextView
@@ -44,8 +44,9 @@
         android:layout_marginEnd="100sp"
         android:gravity="center"
         android:text="Account Settings"
-        android:textColor="#3EBD26"
-        android:textSize="23sp"/>
+        android:textColor="#689F38"
+        android:textSize="23sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
     
     
     <Switch
@@ -53,19 +54,20 @@
         android:layout_width="48sp"
         android:layout_height="48sp"
         android:layout_marginStart="340sp"
-        android:layout_marginTop="15sp"/>
+        android:layout_marginTop="15sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <ImageView
         android:id="@+id/profile"
         android:layout_width="100sp"
         android:layout_height="100sp"
-        android:layout_marginVertical="70sp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginVertical="70sp"
         android:layout_marginStart="150sp"
         android:layout_marginEnd="150sp"
         android:src="@drawable/ic_accsettings"
-        />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:layout_width="197sp"
@@ -78,7 +80,8 @@
         android:background="@drawable/corner_stroke_blue"
         android:gravity="center"
         android:text="123456789123"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <ImageView
         android:layout_width="35sp"
@@ -86,7 +89,8 @@
         app:srcCompat="@drawable/ic_accinfo"
         android:layout_marginVertical="230sp"
         android:layout_marginStart="28sp"
-        android:layout_marginEnd="100sp"/>
+        android:layout_marginEnd="100sp"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="311sp"
@@ -99,7 +103,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/text_color"
-        />
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -112,7 +116,8 @@
         android:background="@drawable/corner_solidgray"
         android:backgroundTint="@color/white"
         android:orientation="vertical"
-        android:padding="10sp">
+        android:padding="10sp"
+        tools:ignore="TextSizeCheck">
 
         <TextView
             android:id="@+id/fullname"
@@ -137,7 +142,8 @@
             android:layout_marginVertical="10sp"
             android:paddingTop="4sp"
             android:text="Email:"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
 
         <View
             android:layout_width="match_parent"
@@ -153,7 +159,8 @@
             android:layout_marginVertical="10sp"
             android:paddingTop="2sp"
             android:text="mobile:"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
 
 
     </LinearLayout>
@@ -165,7 +172,8 @@
         app:srcCompat="@drawable/ic_billingadd"
         android:layout_marginVertical="460sp"
         android:layout_marginStart="28sp"
-        android:layout_marginEnd="100sp"/>
+        android:layout_marginEnd="100sp"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/billing_address"
@@ -178,7 +186,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/text_color"
-        />
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -196,7 +204,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Address:"
-            android:textSize="18sp" />
+            android:textColor="#455A64"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
 
     </LinearLayout>
@@ -208,7 +218,8 @@
         app:srcCompat="@drawable/ic_accpass"
         android:layout_marginVertical="610sp"
         android:layout_marginStart="28sp"
-        android:layout_marginEnd="100sp"/>
+        android:layout_marginEnd="100sp"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/accpass"
@@ -221,7 +232,8 @@
         android:text="Account Password"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:textColor="@color/text_color"/>
+        android:textColor="@color/text_color"
+        tools:ignore="HardcodedText" />
 
 
     <ImageView
@@ -231,7 +243,8 @@
         app:srcCompat="@drawable/ic_edit"
         android:layout_marginVertical="620sp"
         android:layout_marginStart="235sp"
-        android:layout_marginEnd="100sp"/>
+        android:layout_marginEnd="100sp"
+        tools:ignore="ContentDescription" />
 
 
 </RelativeLayout>
