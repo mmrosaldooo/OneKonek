@@ -9,13 +9,15 @@
 
     <ImageButton
         android:id="@+id/back2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginVertical="15dp"
         android:layout_marginStart="10dp"
-        android:backgroundTint="@color/white"
-        android:contentDescription="for back only"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
+        android:backgroundTint="@color/background_color"
+        android:textColorHint="@color/background_color"
+        android:contentDescription="@string/for_back_only"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="ImageContrastCheck" />
 
 
     <ImageView
@@ -23,7 +25,8 @@
         android:layout_height="132dp"
         android:layout_marginVertical="70dp"
         android:layout_marginStart="30dp"
-        app:srcCompat="@drawable/onekoneklogo" />
+        app:srcCompat="@drawable/onekoneklogo"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="311dp"
@@ -32,10 +35,11 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="455dp"
-        android:text="Welcome to One Konek"
+        android:text="@string/welcome_to_one_konek"
+        android:textColor="#1975AE"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:textSize="28dp"
-        android:textColor="#1975AE"/>
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +48,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="377dp"
-        android:text="Please enter your 13 digit account number and password to start managing your subscription. Or click “Apply Now” if you wish to subscribe." />
+        android:text="@string/please_enter_your_13_digit_account_number_and_password_to_start_managing_your_subscription_or_click_apply_now_if_you_wish_to_subscribe"
+        tools:ignore="VisualLintLongText" />
 
     <EditText
         android:id="@+id/acc_num"
@@ -55,10 +60,11 @@
         android:layout_marginEnd="18dp"
         android:background="@drawable/corner_stroke_black"
         android:backgroundTint="#D3D3D3"
-        android:hint="Account Number *"
+        android:hint="@string/account_num"
         android:padding="20dp"
         android:textColor="#FFFDFD"
-        android:textColorHint="#9C9B9B"/>
+        android:textColorHint="#455A64"
+        tools:ignore="Autofill,TextFields" />
 
 
     <EditText
@@ -68,12 +74,13 @@
         android:layout_marginVertical="450dp"
         android:layout_marginStart="22dp"
         android:layout_marginEnd="18dp"
+        android:background="@drawable/corner_stroke_black"
         android:backgroundTint="#D3D3D3"
-        android:hint="Password *"
+        android:hint="@string/password"
         android:padding="20dp"
         android:textColor="#FFFDFD"
-        android:textColorHint="#A1A0A0"
-        android:background="@drawable/corner_stroke_black"/>
+        android:textColorHint="#455A64"
+        tools:ignore="Autofill,TextFields" />
 
     <TextView
         android:id="@+id/forgetpass"
@@ -85,8 +92,9 @@
         android:layout_marginStart="260dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="193dp"
-        android:text="Forgot Password?"
-        android:textColor="#1975AE" />
+        android:text="@string/forgot_password"
+        android:textColor="#1975AE"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/loginbutton"
@@ -98,8 +106,10 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="126dp"
-        android:text="LOGIN"
-        android:background="@drawable/corner_solidblue" />
+        android:background="@drawable/corner_solidblue"
+        tools:ignore="VisualLintButtonSize"
+        android:text="@string/login"
+        android:textColor="#F5F5F5" />
 
 
     <TextView
@@ -110,7 +120,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="93dp"
         android:layout_marginBottom="94dp"
-        android:text="New to One Konek?"
+        android:text="@string/new_to_one_konek"
         android:textStyle="bold" />
 
     <TextView
@@ -123,9 +133,10 @@
         android:layout_marginStart="225dp"
         android:layout_marginEnd="95dp"
         android:layout_marginBottom="94dp"
-        android:text="  Apply Now"
+        android:text="@string/apply_now2"
         android:textColor="#1975AE"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
 
 
 </RelativeLayout>

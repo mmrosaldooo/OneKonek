@@ -21,26 +21,29 @@
             android:layout_marginStart="10dp"
             android:backgroundTint="@color/white"
             android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/baseline_arrow_back_24" />
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="167dp"
             android:layout_height="155dp"
             android:layout_marginStart="30dp"
-            app:srcCompat="@drawable/onekoneklogo" />
+            app:srcCompat="@drawable/onekoneklogo"
+            tools:ignore="ContentDescription" />
 
         <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:textColor="#257FC6"
-        android:text="Application Form"
-        android:textStyle="bold"
-        android:textSize="23dp"/>
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/application_form"
+            android:textColor="#257FC6"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView6"
@@ -50,7 +53,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="90dp"
-        android:text="Please provide your basic information, location, and the plan you wish to subscribe to. If you agree to our Privacy Policy, please check the box below." />
+        android:text="@string/please_provide_your_basic_information_location_and_the_plan_you_wish_to_subscribe_to_if_you_agree_to_our_privacy_policy_please_check_the_box_below"
+        tools:ignore="VisualLintLongText" />
 
     <TextView
         android:id="@+id/textView5"
@@ -60,36 +64,38 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="20dp"
-        android:text="Basic Information"
+        android:text="@string/basic_information"
         android:textColor="#257FC6"
-        android:textSize="23dp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/fname"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:background="@drawable/corner_solidgray"
-        android:hint="First Name *"
-        android:padding="15dp"
-        android:textColor="#FFFDFD"
-        android:textColorHint="#9C9B9B" />
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/first_name"
+            android:padding="15dp"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
-    <EditText
-        android:id="@+id/lname"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:background="@drawable/corner_solidgray"
-        android:hint="Last Name *"
-        android:padding="15dp"
-        android:textColor="#FFFDFD"
-        android:textColorHint="#9C9B9B" />
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/last_name"
+            android:padding="15dp"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/mother"
@@ -98,37 +104,40 @@
             android:layout_marginVertical="10dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
-            android:hint="Mother (Maiden Name) *"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/mother_maiden_name"
             android:padding="15dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B"
-            android:background="@drawable/corner_solidgray"/>
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
-    <EditText
-        android:id="@+id/mobilenum"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:hint="Mobile Number *"
-        android:padding="15dp"
-        android:textColor="#FFFDFD"
-        android:textColorHint="#9C9B9B"
-        android:background="@drawable/corner_solidgray"/>
+        <EditText
+            android:id="@+id/mobilenum"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/mobile_number"
+            android:padding="15dp"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:hint="Email *"
-        android:padding="15dp"
-        android:textColor="#FFFDFD"
-        android:textColorHint="#9C9B9B"
-        android:background="@drawable/corner_solidgray"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/email"
+            android:padding="15dp"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/bday"
@@ -137,11 +146,12 @@
             android:layout_marginVertical="10dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
-            android:hint="Birthday *"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/birthday"
             android:padding="15dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B"
-            android:background="@drawable/corner_solidgray"/>
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
         <TextView
 
@@ -151,8 +161,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="608dp"
-            android:text="Address Details"
-            android:textSize="25dp"
+            android:text="@string/address_details"
+            android:textSize="25sp"
             android:textColor="#257FC6"
             android:textStyle="bold" />
 
@@ -165,10 +175,11 @@
             android:layout_marginEnd="25dp"
             android:background="@drawable/corner_solidgray"
             android:drawablePadding="20dp"
-            android:hint="Unit/House number, Street name,... *"
+            android:hint="@string/unit_house_number_street_name"
             android:padding="20dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B" />
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/brgy"
@@ -177,13 +188,13 @@
             android:layout_marginVertical="20dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
+            android:background="@drawable/corner_solidgray"
             android:drawablePadding="20dp"
-            android:hint="Barangay *"
+            android:hint="@string/barangay"
             android:padding="20dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B"
-            android:background="@drawable/corner_solidgray"/>
-
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
 
         <EditText
@@ -193,12 +204,13 @@
             android:layout_marginVertical="2dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
+            android:background="@drawable/corner_solidgray"
             android:drawablePadding="20dp"
-            android:hint="City/Municipality *"
+            android:hint="@string/city_municipality"
             android:padding="20dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B"
-            android:background="@drawable/corner_solidgray"/>
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
 
         <EditText
@@ -209,11 +221,12 @@
 
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
-            android:hint="Zip Code *"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/zip_code"
             android:padding="20dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B"
-            android:background="@drawable/corner_solidgray"/>
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/landmark"
@@ -223,11 +236,12 @@
 
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
-            android:hint="Nearest Landmark *"
+            android:background="@drawable/corner_solidgray"
+            android:hint="@string/nearest_landmark"
             android:padding="20dp"
             android:textColor="#FFFDFD"
-            android:textColorHint="#9C9B9B"
-            android:background="@drawable/corner_solidgray"/>
+            android:textColorHint="#455A64"
+            tools:ignore="Autofill,TextFields" />
 
         <TextView
 
@@ -237,8 +251,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="200dp"
             android:layout_marginBottom="212dp"
-            android:text="Select Plan"
-            android:textSize="25dp"
+            android:text="@string/select_plan"
+            android:textSize="25sp"
             android:textColor="#257FC6"
             android:textStyle="bold" />
 
@@ -252,12 +266,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/corner_solid_graylandpage">
+                android:background="@drawable/corner_solid_graylandpage"
+                tools:ignore="UselessParent">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Select Plan"
+                    android:hint="@string/select_plan2"
                     app:hintEnabled="true">
 
                 <Spinner
@@ -271,36 +286,30 @@
         </LinearLayout>
     </LinearLayout>
 
-
-
-
-
-
-
-
-    <CheckBox
+        <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="271dp"
             android:layout_height="48dp"
             android:layout_marginVertical="20dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
-            android:text="I agree in Privacy Policy, which I have read and understand."
+            android:text="@string/i_agree_in_privacy_policy_which_i_have_read_and_understand"
 
-            />
+            tools:ignore="TextSizeCheck" />
 
         <Button
             android:id="@+id/submit_application"
-            android:layout_width="380dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginVertical="20dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="45dp"
             android:layout_marginEnd="100dp"
             android:layout_marginBottom="16dp"
-            android:text="SUBMIT APPLICATION"
+            android:text="@string/submit_application"
             android:textColor="#FFFDFD"
             android:background="@drawable/corner_solidblue"
-            android:onClick="OpenApplicationForm"/>
+            android:onClick="OpenApplicationForm"
+            tools:ignore="OnClick,UsingOnClickInXml" />
 
     </LinearLayout>
 

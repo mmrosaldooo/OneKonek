@@ -1,8 +1,66 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">OneKonek</string>
     <string name="select" />
     <string name="app_name2">DropdownMenu</string>
     <string name="item_label">Items</string>
+    <string name="check_availability">CHECK AVAILABILITY</string>
+    <string name="apply_now">APPLY NOW</string>
+    <string name="plans">PLANS</string>
+    <string name="application_status">APPLICATION STATUS</string>
+    <string name="register">register</string>
+    <string name="account_name">Account name:</string>
+    <string name="account_number">Account number:</string>
+    <string name="hello_juan">Hello, Juan!</string>
+    <string name="account_status_overdue">Account Status: OVERDUE</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="plan">Plan:</string>
+    <string name="hi_juan_plesae_be_reminded" tools:ignore="TypographyEllipsis">Hi, Juan! Plesae be reminded...</string>
+    <string name="hi_juan_please_be_reminded">Hi, Juan! Please be reminded</string>
+    <string name="upcoming_due_dates">Upcoming due dates</string>
+    <string name="messages">Messages</string>
+    <string name="fullname">Fullname:</string>
+    <string name="address_details">Address Details</string>
+    <string name="unit_house_number_street_name" tools:ignore="TypographyEllipsis">Unit/House number, Street name,... *</string>
+    <string name="barangay">Barangay *</string>
+    <string name="city_municipality">City/Municipality *</string>
+    <string name="zip_code">Zip Code *</string>
+    <string name="nearest_landmark">Nearest Landmark *</string>
+    <string name="select_plan">Select Plan</string>
+    <string name="select_plan2">Select Plan</string>
+    <string name="i_agree_in_privacy_policy_which_i_have_read_and_understand">I agree in Privacy Policy, which I have read and understand.</string>
+    <string name="submit_application">SUBMIT APPLICATION</string>
+    <string name="email">Email *</string>
+    <string name="birthday">Birthday *</string>
+    <string name="mobile_number">Mobile Number *</string>
+    <string name="mother_maiden_name">Mother (Maiden Name) *</string>
+    <string name="first_name">First Name *</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="application_form">Application Form</string>
+    <string name="get_started">Get Started</string>
+    <string name="please_provide_your_basic_information_location_and_the_plan_you_wish_to_subscribe_to_if_you_agree_to_our_privacy_policy_please_check_the_box_below">Please provide your basic information, location, and the plan you wish to subscribe to. If you agree to our Privacy Policy, please check the box below.</string>
+    <string name="last_name">Last Name *</string>
+    <string name="new_to_one_konek">New to One Konek?</string>
+    <string name="apply_now2">Apply Now</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password *</string>
+    <string name="welcome_to_one_konek">Welcome to One Konek</string>
+    <string name="please_enter_your_13_digit_account_number_and_password_to_start_managing_your_subscription_or_click_apply_now_if_you_wish_to_subscribe">Please enter your 13 digit account number and password to start managing your subscription. Or click “Apply Now” if you wish to subscribe.</string>
+    <string name="for_back_only">for back only</string>
+    <string name="account_num">Account Number *</string>
+    <string name="remaining_balance">Remaining Balance\n\n₱1,998.00</string>
+    <string name="payment_reminder1" tools:ignore="TypographyEllipsis">Payment reminder...</string>
+    <string name="payment_reminder2" tools:ignore="TypographyEllipsis">Payment reminder...</string>
+    <string name="payment_reminder3" tools:ignore="TypographyEllipsis">Payment reminder...</string>
+    <string name="payment_due_date">Payment Due Date:</string>
+    <string name="hi_juan_please_be_reminded2">Hi, Juan! Please be reminded</string>
+    <string name="_999_00">₱999.00</string>
+    <string name="paymongo">Paymongo</string>
+    <string name="paymongopic">Paymongo</string>
+    <string name="paynow">Pay Now</string>
+    <string name="amount_to_pay">Amount to Pay:</string>
+    <string name="mode_of_payment">Mode of Payment</string>
+    <string name="paymongoo">Paymongo</string>
 </resources>
 
 

@@ -30,20 +30,22 @@
         android:layout_marginEnd="115dp"
         android:gravity="center"
         android:text="Payments"
-        android:textColor="#3EBD26"
-        android:textSize="24dp" />
+        android:textColor="#689F38"
+        android:textSize="24dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
 
-       <ImageButton
-            android:id="@+id/back3"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginVertical="15dp"
-            android:layout_marginStart="10dp"
-            android:backgroundTint="#0fffffff"
-            android:contentDescription="@string/app_name"
-            android:onClick="OpenBack"
-            app:srcCompat="@drawable/arrow_back" />
+    <ImageButton
+        android:id="@+id/back3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#0fffffff"
+        android:contentDescription="@string/app_name"
+        android:onClick="OpenBack"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="ImageContrastCheck,UsingOnClickInXml" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +55,8 @@
         android:layout_marginStart="30dp"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
 
         <LinearLayout
@@ -75,7 +78,8 @@
                 android:text="amount *"
                 android:textColor="@android:color/holo_blue_dark"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <TextView
                 android:id="@+id/transac_due_date"
@@ -83,7 +87,9 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="4dp"
                 android:text="Payment Date:"
-                android:textSize="16sp" />
+                android:textColor="#455A64"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/transac_num"
@@ -92,7 +98,8 @@
                 android:paddingTop="2dp"
                 android:text="Transaction Number:"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
 
         </LinearLayout>
@@ -116,7 +123,8 @@
                 android:text="amount *"
                 android:textColor="@android:color/holo_blue_dark"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <TextView
                 android:id="@+id/upcoming_due_date1"
@@ -124,7 +132,9 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="4dp"
                 android:text="Payment Date:"
-                android:textSize="16sp" />
+                android:textColor="#455A64"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_status1"
@@ -133,7 +143,8 @@
                 android:paddingTop="2dp"
                 android:text="Transaction Number:"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
 
         </LinearLayout>
@@ -155,9 +166,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="amount *"
-                android:textColor="@android:color/holo_blue_dark"
+                android:textColor="#0277BD"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/upcoming_due_date2"
@@ -165,7 +177,9 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="4dp"
                 android:text="Payment Date:"
-                android:textSize="16sp" />
+                android:textColor="#455A64"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_status2"
@@ -174,7 +188,8 @@
                 android:paddingTop="2dp"
                 android:text="Transaction Number:"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
 
         </LinearLayout>
@@ -187,7 +202,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#ffffff"
-        app:menu="@menu/navigation_items">
+        app:menu="@menu/navigation_items"
+        tools:ignore="VisualLintBottomNav">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 

@@ -22,8 +22,8 @@
         android:layout_marginStart="10dp"
         android:backgroundTint="#0fffffff"
         android:contentDescription="@string/app_name"
-        app:srcCompat="@drawable/arrow_back" />
-
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="ImageContrastCheck" />
 
 
     <TextView
@@ -36,9 +36,10 @@
         android:layout_marginStart="115dp"
         android:layout_marginEnd="115dp"
         android:gravity="center"
-        android:text="Pay Now"
-        android:textColor="#3EBD26"
-        android:textSize="24dp" />
+        android:text="@string/paynow"
+        android:textColor="#689F38"
+        android:textSize="24dp"
+        tools:ignore="SpUsage,TextSizeCheck" />
 
     <LinearLayout
         android:layout_width="375dp"
@@ -57,7 +58,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Amount to Pay:"
+            android:text="@string/amount_to_pay"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -80,7 +81,8 @@
                 android:hint="Enter Amount"
                 android:inputType="numberDecimal"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,InefficientWeight,VisualLintTextFieldSize" />
 
         </LinearLayout>
 
@@ -101,7 +103,8 @@
                 android:hint="Account Number"
                 android:inputType="number"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="Autofill,HardcodedText,InefficientWeight,VisualLintTextFieldSize" />
 
         </LinearLayout>
 
@@ -122,16 +125,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mode of Payment"
+            android:text="@string/mode_of_payment"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="VisualLintOverlap,VisualLintBounds" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="12sp"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment,VisualLintBounds">
 
             <LinearLayout
                 android:id="@+id/paymongoOption"
@@ -143,7 +148,8 @@
                 android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="12dp">
+                android:padding="12dp"
+                tools:ignore="UseCompoundDrawables,VisualLintBounds">
 
 
                 <ImageView
@@ -152,16 +158,18 @@
                     android:layout_gravity="center_horizontal"
                     android:adjustViewBounds="true"
                     android:background="@drawable/corner_strokebl_solidwh"
-                    android:contentDescription="Paymongo"
-                    android:src="@drawable/paymongsq" />
+                    android:contentDescription="@string/paymongo"
+                    android:src="@drawable/paymongsq"
+                    tools:ignore="VisualLintBounds" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Paymongo"
+                    android:text="@string/paymongoo"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="VisualLintBounds" />
 
             </LinearLayout>
 
@@ -176,7 +184,8 @@
                 android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="12dp">
+                android:padding="12dp"
+                tools:ignore="UseCompoundDrawables,VisualLintBounds">
 
                 <ImageView
                     android:layout_width="130dp"
@@ -184,8 +193,9 @@
                     android:layout_gravity="center_horizontal"
                     android:adjustViewBounds="true"
                     android:background="@drawable/corner_strokebl_solidwh"
-                    android:contentDescription="Paymongo"
-                    android:src="@drawable/xenditlogo" />
+                    android:contentDescription="@string/paymongopic"
+                    android:src="@drawable/xenditlogo"
+                    tools:ignore="VisualLintBounds" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -193,7 +203,8 @@
                     android:layout_marginTop="8dp"
                     android:text="Xendit"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,VisualLintBounds" />
 
             </LinearLayout>
 
@@ -223,7 +234,8 @@
             android:text="Amount to Pay: \n\n ₱"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/payNowButton"
@@ -233,7 +245,7 @@
             android:text="PAY NOW"
             android:textColor="@color/white"
             android:onClick="OpenPayment"
-            />
+            tools:ignore="HardcodedText,UsingOnClickInXml" />
 
 
 

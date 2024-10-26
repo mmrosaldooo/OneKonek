@@ -31,7 +31,8 @@
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="@+id/toolbar1"
         app:layout_constraintTop_toTopOf="@+id/toolbar1"
-        app:srcCompat="@drawable/arrow_back" />
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="UsingOnClickInXml,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView"
@@ -40,12 +41,13 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Tickets"
-        android:textColor="#3EBD26"
-        android:textSize="25dp"
+        android:textColor="#689F38"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/toolbar1"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/toolbar1"
-        app:layout_constraintTop_toTopOf="@+id/toolbar1" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar1"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
 
     <FrameLayout
@@ -70,8 +72,9 @@
             android:layout_marginStart="50dp"
             android:background="@drawable/corner_solidgray"
             android:text="Contact Us"
-            android:textColor="#1975AE"
-            android:textSize="17dp" />
+            android:textColor="#01579B"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
         <Button
             android:id="@+id/submit_ticket"
@@ -83,8 +86,9 @@
             android:layout_marginStart="50dp"
             android:background="@drawable/corner_solidgray"
             android:text="Submit a Ticket"
-            android:textColor="#1975AE"
-            android:textSize="17dp" />
+            android:textColor="#01579B"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -92,7 +96,8 @@
             android:layout_height="83dp"
             android:layout_marginVertical="50dp"
             android:layout_marginStart="155dp"
-            app:srcCompat="@drawable/ic_ticketing" />
+            app:srcCompat="@drawable/ic_ticketing"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -104,7 +109,8 @@
             android:text="How can we help you?"
             android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
